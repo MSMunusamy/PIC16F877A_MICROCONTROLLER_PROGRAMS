@@ -17,7 +17,7 @@ int main()
 		}
 		for(i=0;i<7;i++)
 		{
-			a	= a>>1;
+			a = a>>1;
 			if(i!=6)
 			{
 				PORTB	= a;
