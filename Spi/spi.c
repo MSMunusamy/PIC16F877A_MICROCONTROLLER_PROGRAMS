@@ -4,9 +4,6 @@
 #define SS_ RC1
 __CONFIG(FOSC_HS & WDTE_OFF & PWRTE_OFF & BOREN_ON & LVP_OFF);
 
-
-
-
 void delay();
 void spi_init(void);
 unsigned char spi_transfer(unsigned char data);
@@ -108,7 +105,6 @@ void uart_init(void)
 {
 	TRISC6 = 0; //making TX as output
 	TRISC7 = 1; //making RX as input
-
 	TXSTA = 0x00; //Asynchronous mode, 8bit, low speed
 	RCSTA = 0x00; //Enable UART to use RC7 and RC6 as UART module pins
 	SPBRG = 31; //to generate 9600 baudrate
