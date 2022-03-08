@@ -59,8 +59,8 @@ void delay_s()
 	T0CS 	= 0;
 	T0SE 	= 0;
 	PSA 	= 0;
-	PS0		= 0;
-	PS1		= 0;
+	PS0	= 0;
+	PS1	= 0;
 	PS2 	= 1;
 	TMR0IF  = 0;
 	TMR0IE	= 1;
